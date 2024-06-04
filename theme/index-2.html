@@ -38,6 +38,7 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lee-style.css">
   
   <!--Favicon-->
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -862,11 +863,11 @@
    <!--Content -->
    <div class="container">
      <div class="row justify-content-start">
-       <div class="col-lg-4 col-sm-12">
+       <div class="col-lg-10 col-sm-12">
          <div class="footer-widget">
            <!-- Brand -->
-           <a href="index.html" class="footer-brand text-white">
-             Mission Locale de Saint-Gilles
+           <a href="https://mlsg.be/" target="_blank" class="footer-brand text-white">
+            Mission Locale Saint-Gilles
            </a>
            <p>255 chausée de Waterloo</p>
            <p>1060 Saint-Gilles</p>
@@ -949,22 +950,33 @@
            <h3>Socials</h3>
            <!-- Links -->
            <ul class="list-unstyled footer-links">
-             <li><a href="https://www.facebook.com/themefisher"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+             <li><a href="https://www.facebook.com/missionlocaledesaintgilles" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></li>
              <li>
-               <a href="https://www.twitter.com/themefisher"><i class="fab fa-twitter"></i>Twitter
+               <a href="https://www.instagram.com/missionlocaledesaintgilles/"><i class="fab fa-instagram"></i>Instagram
                </a></li>
-             <li><a href="https://www.pinterest.com/themefisher/"><i class="fab fa-pinterest-p"></i>Pinterest
+             <li><a href="https://be.linkedin.com/company/mission-locale-pour-l%27emploi-de-saint-gilles"><i class="fab fa-linkedin"></i>linkedin
                </a></li>
-             <li><a href="https://themefisher.com/"><i class="fab fa-linkedin"></i>linkedin
-               </a></li>
-             <li><a href="https://www.youtube.com/channel/UCx9qVW8VF0LmTi4OF2F8YdA"><i class="fab fa-youtube"></i>YouTube
+             <li><a href="https://www.youtube.com/channel/UC-_2jO4Bw7PqM5k00sGFdgA"><i class="fab fa-youtube"></i>YouTube
                </a></li>
            </ul>
          </div>
        </div>
+
+    <!-- BULLETIN SIGNUP -->   
+       <div class="col-4 d-flex flex-column align-items-center border border-secondary rounded-circle p-4">
+        <h5 class="text-white">Bulletin</h5>
+        <p class="mt-3 text-center">Pour recevoir notre newsletter, veuillez saisir votre adresse email</p>
+        <div class="d-flex flex-column align-items-center">
+            <input class="form-control py-3 px-4 bg-transparent text-center" placeholder="Adresse Email">
+            <button class="btn btn-dark mt-2">Envoyer</button>
+        </div>
+    </div>
+    <!-- / BULLETIN SIGNUP -->   
+
      </div> <!-- / .row -->
 
 
+    
      <div class="row text-right pt-5">
        <div class="col-lg-12">
          <div class="overflow-hidden">
@@ -972,7 +984,32 @@
           <p class="footer-copy">
             Copyright &copy; <script>var CurrentYear = new Date().getFullYear()
             document.write(CurrentYear)
-          </script>. Designed &amp; Developed by <a class="current-year" href="https://themefisher.com/">Themefisher</a>
+          </script>. Conçu &amp; développé par 
+                                   <div id="pop-upBA" class="pop-ups">
+                                       <p>
+                                           Appear on BA hover
+                                        </p>
+                                    </div>
+                                <span class="current-year"><span class="ourCopyrightNames" id="nameBA"><a href="https://2023.webdev-cf2m.be/Baris/TI3-2024/public/">Baris Aktas</a></span> - </span> <!-- Faut que Baris change sa page (entretemps, j'ai mis TI3) -->
+                                <div id="pop-upAA" class="pop-ups">
+                                    <p>
+                                        Appear on AA hover
+                                     </p>
+                                 </div>
+                                <span class="current-year"><span class="ourCopyrightNames" id="nameAA"><a href="https://2023.webdev-cf2m.be/Anthony/">Anthony Arnone</a></span> - </span>
+                                <div id="pop-upRB" class="pop-ups">
+                                    <p>
+                                        Appear on RB hover
+                                     </p>
+                                 </div>
+                                <span class="current-year"><span class="ourCopyrightNames" id="nameRB"><a href="https://2023.webdev-cf2m.be/Rami/">Rami Ben Salem</a></span> - </span>
+                                <div id="pop-upLB" class="pop-ups">
+                                    <p>
+                                        Appear on LB hover
+                                     </p>
+                                 </div>
+                                <span class="current-year"><span class="ourCopyrightNames" id="nameLB"><a href="https://leerlandais.com">Lee Brennan</a></span></span>
+                                
           </p>
          </div>
        </div>
@@ -980,7 +1017,9 @@
    </div> <!-- / .container -->
  </footer>
 
-
+ <div class="hiddenContainer" style="display: none;width: 6rem;padding: 0.5rem; margin: 0.5rem 0.8rem; box-shadow: 0 0 5px rgb(160, 158, 158);background-color: green;color: white;text-align: center;border-radius: 5px;">
+    Tutorialspoint
+ </div>
  <!--  Page Scroll to Top  -->
 
  <a id="scroll-to-top" class="scroll-to-top js-scroll-trigger" href="#top-header">
@@ -1001,6 +1040,7 @@
   <script src="plugins/google-map/gmap.js"></script>
 
   <script src="js/script.js"></script>
+  <script src="js/lee-script.js"></script>
 
 </body>
 </html>
