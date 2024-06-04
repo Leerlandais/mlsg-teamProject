@@ -1,4 +1,32 @@
 $(document).ready(function() {
+
+    $('#nameBA').hover(function(e) {
+        $('div#pop-upBA').show();
+      }, function() {
+        $('div#pop-upBA').hide();
+      });
+
+
+      $('#nameAA').hover(function(e) {
+        $('div#pop-upAA').show();
+      }, function() {
+        $('div#pop-upAA').hide();
+      });
+      
+    $('#nameRB').hover(function(e) {
+        $('div#pop-upRB').show();
+      }, function() {
+        $('div#pop-upRB').hide();
+      });
+      
+    $('#nameLB').hover(function(e) {
+        $('div#pop-upLB').show();
+      }, function() {
+        $('div#pop-upLB').hide();
+      });
+
+
+
 /*
         function tagOurNames() {
             // nice - this is the jQ for removeEventListener
