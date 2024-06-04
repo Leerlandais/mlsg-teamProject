@@ -121,6 +121,22 @@ h6 {
   background: #F4F7FC;
 }
 
+/*Style Anthony*/
+.containerNav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+
+
+
+
+/*Fin style*/
+
 /*--------------------
 Common Styles
 -----------------*/
@@ -353,7 +369,7 @@ a:focus {
 }
 
 .main-navigation {
-  margin-top: -40px;
+  margin-top: -55px;
   width: 100%;
   text-wrap: nowrap;
 }
@@ -557,8 +573,8 @@ PAGE BANNER
 }
 
 .navbar-nav .nav-link {
-  padding-right: 5px !important;
-  padding-left: 1rem !important;
+  padding-right: 10px !important;
+  padding-left: 40px !important;
   transition: 0.3s;
 }
 
