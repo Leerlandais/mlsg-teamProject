@@ -1475,7 +1475,7 @@ CONTACT PAGE
   width: 2000%;
   height: 1px;
   height: 1px;
-  background: #94959a;
+  background: #7E2C5C;
 }
 
 .current-year {
@@ -1614,7 +1614,7 @@ CONTACT PAGE
     width: 100%;
     text-align: left;
   }
-
+  
   .footer-copy:before {
     display: none;
   }

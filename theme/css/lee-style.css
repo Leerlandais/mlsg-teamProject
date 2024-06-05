@@ -22,3 +22,74 @@ div.pop-ups {
     border: 1px solid #1a1a1a;
     font-size: 90%;
   }
+
+  .ourCopyrightNames {
+    color : #00A89F;
+  }
+
+  .redFooterHeaders{
+    color: #7E2C5C !important;
+  }
+
+  .obligedButtonColour {
+    border-color: #00A89F;
+    color:  #7e2c5c;
+  }
+
+  .obligedBorderColour {
+    border-color: #7E2C5C !important;
+  }
+  /*
+
+  bleu - #00A89F
+  red - #E30056
+  purple #7E2C5C
+
+*/
+  .theFooterButton {
+  --color: #00A89F;
+  font-family: inherit;
+  display: inline-block;
+
+  
+
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 12px;
+  z-index: 1;
+  color: white;
+  border: 1px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+.theFooterButton::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 240px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.theFooterButton:hover {
+  color: white;
+}
+
+.theFooterButton:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.theFooterButton:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+
+.returnToTop {
+  background-color: #00A89F;
+}
