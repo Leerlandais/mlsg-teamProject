@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+
+  
+  $('.ourCopyrightNames').on('mouseenter', function () {
+    $(this).css("color", 'grey');
+   // $(this).animate({color : 'grey'},1000);
+    
+    $('.ourCopyrightNames').on('mouseleave', function () {  
+      $(this).removeAttr("style");
+    });
+  });
+
+  $('.colourChange').on('mouseenter', function() {
+      $(this).css("color", '#21c87a');
+    $('.colourChange').on('mouseleave', function() {
+      $(this).removeAttr("style");
+    });
+  });
+    
+  /*
+  
+
     $('#nameBA').hover(function(e) {
         $('div#pop-upBA').show();
       }, function() {
@@ -27,7 +48,7 @@ $(document).ready(function() {
 
 
 
-/*
+
         function tagOurNames() {
             // nice - this is the jQ for removeEventListener
             $('.ourCopyrightNames').off('mouseenter');
