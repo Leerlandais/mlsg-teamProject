@@ -385,3 +385,21 @@ button:active {
     padding-bottom: 10px;
 }
 
+#photoPresentation {
+    border-top-left-radius: 0200px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 50px;
+    margin-left: 5% !important;
+
+}
+
+#about {
+    background-color: #f5f5f54c;
+}
+
+@media screen and (min-width:500px) and (max-width:760px) {
+    #boutonApropos {
+        display: flex;
+    }
+}
