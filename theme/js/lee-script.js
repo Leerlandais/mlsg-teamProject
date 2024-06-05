@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   
   $('.ourCopyrightNames').on('mouseenter', function () {
-    $(this).css("color", 'grey');
+    $(this).css("color", '#E30056');
    // $(this).animate({color : 'grey'},1000);
     
     $('.ourCopyrightNames').on('mouseleave', function () {  
@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
 
   $('.colourChange').on('mouseenter', function() {
-      $(this).css("color", '#21c87a');
+      $(this).css("color", '#7E2C5C');
     $('.colourChange').on('mouseleave', function() {
       $(this).removeAttr("style");
     });
