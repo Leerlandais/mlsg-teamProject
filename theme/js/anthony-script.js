@@ -25,7 +25,7 @@ $(document).ready(function () {
                 });
             }
         });
-        $('.item1.active img').animateCss('slideInDown');
+        $('#logoMlsg').animateCss('flipInX');
         $('.item1.active h2').animateCss('zoomIn');
         $('.item1.active p').animateCss('fadeIn');
   
@@ -44,7 +44,7 @@ $(document).ready(function () {
   
         // add animation type  from animate.css on the element which you want to animate
   
-        $('.item1 img').animateCss('slideInDown');
+        
         $('.item1 h2').animateCss('zoomIn');
         $('.item1 p').animateCss('fadeIn');
   
