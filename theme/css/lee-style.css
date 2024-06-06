@@ -93,3 +93,7 @@ div.pop-ups {
 .returnToTop {
   background-color: #00A89F;
 }
+
+#hrHidden {
+  opacity: 0;
+}

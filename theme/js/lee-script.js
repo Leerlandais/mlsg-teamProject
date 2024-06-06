@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+$('.hiddenContact').hide();
+$("#slidingFooter").hide()
+
 
   
   $('.ourCopyrightNames').on('mouseenter', function () {
@@ -21,7 +24,25 @@ $(document).ready(function() {
   
   
   
-  
+  const target = document.querySelector('#hrHidden');
+
+  let observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+          if (!entry.isIntersecting) {
+              console.log('<hr> est pas visible');            
+          } else {
+            $('#slidingFooter').toggle(3000);
+
+          }
+      });
+  });
+
+  observer.observe(target);
+
+
+
+
+
   
   
   
