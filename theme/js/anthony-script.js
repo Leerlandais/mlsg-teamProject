@@ -28,8 +28,17 @@ $(document).ready(function () {
         $('#logoMlsg').animateCss('flipInX');
         $('.item1.active h2').animateCss('zoomIn');
         $('.item.active h2').animateCss('zoomIn');
-        $(".bouton1").animateCss("flipInX");
-       
+        $(".bouton1").animateCss("slideInUp");
+        $("#photoPresentation").animateCss("fadeInRight");
+        $("#aboutAnimate").animateCss("fadeInLeft");
+        
+        $("#card1").animateCss("rollIn");
+        $("#card2").animateCss("rollIn");
+        $("#card3").animateCss("rollIn");
+
+        $("#actu1").animateCss("fadeInUp");
+        $("#actu2").animateCss("fadeInUp");
+        $("#actu3").animateCss("fadeInUp");
         
         
 
@@ -47,22 +56,11 @@ $(document).ready(function () {
         });
 
         // add animation type  from animate.css on the element which you want to animate
-
-
-        
-       
-
-       
        
         $('.item2 h2').animateCss('swing');
-
-       
         $('#item3').animateCss('swing');
         $('titreSlide3').animateCss('swing');
     });
 });
 
-$(function () {
 
-   
-});
