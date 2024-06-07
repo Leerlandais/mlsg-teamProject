@@ -13,6 +13,11 @@
     color:  #7e2c5c;
   }
 
+  .obligedButtonBGColour {
+    background-color: #00A89F;
+    color: #7E2C5C;
+  }
+
   .obligedBorderColour {
     border-color: #7E2C5C !important;
   }
