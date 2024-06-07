@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap');
+
+.carousel-inner,
+.carousel,
+.item,
+.container,
+.fill {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide-wrapper {
+    display: inline;
+}
+
+.slide-wrapper .container {
+    padding: 0px;
+}
+
+/*------------------------------ vertical bootstrap slider----------------------------*/
+
+.carousel-inner>.item.next,
+.carousel-inner>.item.active.right {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    top: 0;
+    left: 0;
+}
+
+.carousel-inner>.item.prev,
+.carousel-inner>.item.active.left {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    top: 0;
+    left: 0;
+}
+
+.carousel-inner>.item.next.left,
+.carousel-inner>.item.prev.right,
+.carousel-inner>.item.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    top: 0;
+    left: 0;
+}
+
+
+
+/*-------- Animation slider ------*/
+
+.animated {
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.carousel-img {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.item img {
+    margin: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.carousel-img img,
+.item1.active .carousel-img img {
+    max-height: 300px;
+}
+
+.item1,
+.item2,
+.item3 {
+    min-height: 800px;
+}
+
+.item1.active .carousel-img img.animated {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -ms-animation-delay: 0.3s;
+}
+
+.item .carousel-desc {
+    color: #fff;
+    text-align: center;
+}
+
+.item h2 {
+    font-size: 50px;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+}
+
+.item p {
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+    width: 50%;
+    margin: auto;
+}
+
+.carousel-img img,
+.item2.active .carousel-img img {
+    max-height: 300px;
+}
+
+.item2.active .carousel-img img.animated {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease;
+    animation-duration: 3s;
+    animation-delay: 0.3s
+}
+
+.item2 h2,
+item2.active h2 {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 5s ease;
+}
+
+.item2.active h2.animated {
+    visibility: visible;
+    opacity: 1;
+    animation-delay: 3s;
+}
+
+.item .fill {
+    padding: 0px 30px;
+    display: table;
+}
+
+.item .inner-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.item3 .col-md-6 {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+
+}
+
+.active .carousel-img img.animated {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease;
+    animation-duration: 2s;
+    animation-delay: 0.3s
+}
+
+.item3 h2,
+item3.active h2 {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 5s ease;
+}
+
+.item.item3 .carousel-desc {
+    text-align: left;
+}
+
+.item3.active h2.animated {
+    visibility: visible;
+    opacity: 1;
+    animation-delay: 1.5s
+}
+
+.item3 p,
+item3.active p {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 5s ease;
+    width: 100%;
+}
+
+.item3.active p.animated {
+    visibility: visible;
+    opacity: 1;
+    animation-delay: 2.5s;
+}
+
+@media(max-width:991px) {
+
+    .item .carousel-desc,
+    .item.item3 .carousel-desc {
+        text-align: center;
+    }
+
+    .item .carousel-desc p {
+        width: 80%;
+    }
+
+    .item3 .col-md-6 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width:768px) {
+
+    .item .carousel-img img,
+    .item.active .carousel-img img {
+        max-height: 155px;
+    }
+
+    .item h2 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    .item .carousel-desc p {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:480px) {
+    .item h2 {
+        font-size: 30px;
+    }
+
+    .item .carousel-desc p {
+        width: 100%;
+    }
+}
+
+.carousel-item.item1 {
+    position: relative;
+}
+
+.carousel-item.item1 {
+    background-image: url(images/teamWorking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.092);
+    /* Couleur de fond de l'overlay semi-transparent */
+}
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.406);
+    /* Couleur de fond de l'overlay semi-transparent */
+}
+.overlay3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+}
+.carousel-desc {
+    position: relative;
+    /* Assurez-vous que le texte est positionné au-dessus de l'overlay */
+    color: white;
+    /* Assurez-vous que le texte est bien lisible */
+}
+
+.containerNav {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+#bouton1 {
+    appearance: button;
+    background-color: #00a89f;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#bouton1:after {
+    background-clip: padding-box;
+    background-color: #00a89f;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#bouton1:focus {
+    user-select: auto;
+}
+
+#bouton1:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+#bouton1:disabled {
+    cursor: auto;
+}
+
+#bouton1:active:after {
+    border-width: 0 0 0px;
+}
+
+#bouton1:active {
+    padding-bottom: 10px;
+}
+
+#photoPresentation {
+    border-top-left-radius: 0200px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 50px;
+    margin-left: 5% !important;
+
+}
+
+#about {
+    background-color: #f5f5f54c;
+}
+
+@media screen and (min-width:500px) and (max-width:760px) {
+    #boutonApropos {
+        display: flex;
+    }
+}
+
+#iconeCard1,
+#iconeCard2,
+#iconeCard3 {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+}
+
+#bouton2 {
+    position: relative;
+    margin: 0 auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#bouton2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #66CCCC;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+#bouton2 span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.675);
+}
+
+#bouton2 svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #ff6ead;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+#bouton2:hover:before {
+    width: 100%;
+    background: #66CCCC;
+
+}
+
+#bouton2:hover svg {
+    transform: translateX(0);
+}
+
+#bouton2:active {
+    transform: scale(0.95);
+}
+
+.lireSuite{
+    color: #E30056;
+    text-align: right !important;
+}
+.lireSuite:hover{
+    color: #E30056;
+}
+
+.blog-content:hover a h3 {
+    color: #E30056;
+  }
+
+
+  .titreSlide1 {
+
+      color: #34082C;
+  }
+  .titreSlide1, .titSlide{
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .titreSlide2,.titreSlide3{
+   margin-top: 10%;
+  }
+
+  @media(max-width:600px) {
+   .titreSlide1{
+    font-size: 20px;
+   }
+   .titreSlide2,.titreSlide3{
+    margin-top: 35%;
+   }
+   #photoPresentation{
+    width: 350px;
+    height: 350px;
+    margin-left: 100px !important;
+    margin-bottom: 50px;
+   }
+   #bouton1{
+   
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+   }
+   #card1,#card2{
+    margin-bottom: 50px;
+   }
+   
+}
+
+
+@media (min-width:601px) and (max-width:770px){
+    .titreSlide1{
+        font-size: 20px;
+       }
+    .titreSlide2,.titreSlide3{
+        margin-top: 35%;
+       }
+     #photoPresentation{
+        margin-bottom: 50px;
+       }
+       #bouton1{
+   
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+       }
+       #card1,#card2{
+        margin-bottom: 50px;
+       }
+}
+
+@media (min-width:772px) and (max-width:800px){
+    .titreSlide1{
+        font-size: 20px;
+       }
+    .titreSlide2,.titreSlide3{
+        margin-top: 35%;
+       }
+       #photoPresentation{
+        width: 450px;
+        height: 450px;
+        margin-left: 100px !important;
+        margin-bottom: 50px;
+        
+       }
+       #card2{
+        height: 95% !important;
+       }
+       #card3{
+        height: 95% !important;
+       }
+}
