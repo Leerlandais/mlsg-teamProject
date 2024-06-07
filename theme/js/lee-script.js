@@ -32,6 +32,7 @@ $("#slidingFooter").hide()
               console.log('<hr> est pas visible');            
           } else {
             $('#slidingFooter').toggle(3000);
+            $("#hrHidden").remove();
 
           }
       });
