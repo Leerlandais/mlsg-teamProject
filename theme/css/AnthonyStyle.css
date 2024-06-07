@@ -490,3 +490,30 @@ item3.active p {
   .titreSlide2,.titreSlide3{
    margin-top: 10%;
   }
+
+  @media(max-width:600px) {
+   .titreSlide1{
+    font-size: 20px;
+   }
+   .titreSlide2,.titreSlide3{
+    margin-top: 35%;
+   }
+   #photoPresentation{
+    width: 350px;
+    height: 350px;
+    margin-left: 100px !important;
+    margin-bottom: 50px;
+   }
+   #bouton1{
+   
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+   }
+   #card1{
+    margin-bottom: 50px;
+   }
+   #card2{
+    margin-bottom: 50px;
+   }
+}
