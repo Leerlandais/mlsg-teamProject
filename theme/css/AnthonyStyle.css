@@ -449,3 +449,7 @@ item3.active p {
 #bouton2:active {
     transform: scale(0.95);
 }
+
+.lireSuite{
+    color: #E30056;
+}
