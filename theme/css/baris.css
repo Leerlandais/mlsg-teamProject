@@ -1,5 +1,5 @@
 .page-banner-area .overlay {
-    background-image: url('images/baris/MicrosoftTeams-image4.png');
+    background-image: url('../images/baris/biotif1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,10 +19,14 @@ h1 {
   }
 
   .bordure{
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 5, 0, 0.5);
 
 }
 
 .rounded-lg-3 {
     border-radius: 8px;
+}
+
+.overlay{
+    box-shadow: 0 0 20px rgb(255, 60, 0);
 }
