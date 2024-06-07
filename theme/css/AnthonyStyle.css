@@ -510,10 +510,52 @@ item3.active p {
     justify-content: center;
     margin: 50px auto;
    }
-   #card1{
+   #card1,#card2{
     margin-bottom: 50px;
    }
-   #card2{
-    margin-bottom: 50px;
-   }
+   
+}
+
+
+@media (min-width:601px) and (max-width:770px){
+    .titreSlide1{
+        font-size: 20px;
+       }
+    .titreSlide2,.titreSlide3{
+        margin-top: 35%;
+       }
+     #photoPresentation{
+        margin-bottom: 50px;
+       }
+       #bouton1{
+   
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+       }
+       #card1,#card2{
+        margin-bottom: 50px;
+       }
+}
+
+@media (min-width:772px) and (max-width:800px){
+    .titreSlide1{
+        font-size: 20px;
+       }
+    .titreSlide2,.titreSlide3{
+        margin-top: 35%;
+       }
+       #photoPresentation{
+        width: 450px;
+        height: 450px;
+        margin-left: 100px !important;
+        margin-bottom: 50px;
+        
+       }
+       #card2{
+        height: 95% !important;
+       }
+       #card3{
+        height: 95% !important;
+       }
 }
