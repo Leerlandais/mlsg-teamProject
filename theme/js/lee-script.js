@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+$('.hiddenContact').hide();
+$("#slidingFooter").hide()
+
 
   
   $('.ourCopyrightNames').on('mouseenter', function () {
@@ -21,7 +24,25 @@ $(document).ready(function() {
   
   
   
-  
+  const target = document.querySelector('#hrHidden');
+
+  let observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+          if (!entry.isIntersecting) {
+              console.log('<hr> est pas visible');            
+          } else {
+            $('#slidingFooter').toggle(3000);
+
+          }
+      });
+  });
+
+  observer.observe(target);
+
+
+
+
+
   
   
   
@@ -59,7 +80,7 @@ $(document).ready(function() {
             $('.ourCopyrightNames').off('mouseenter');
             $('.ourCopyrightNames').one('mouseenter', function() {
                 console.log($(this).text() + ' activated');
-                $(this).replaceWith('<span class="current-year"><a href="https://leerlandais.com">Hi there</a></span>')
+                $(this).replaceWith('<span class="current-year"><a href="https://leerlandais.com" target = "_blank">Hi there</a></span>')
                // $(this).text("works")      
                 // allows me to prevent them being clicked twice in a row
                 $('.ourCopyrightNames').removeClass("active");
@@ -81,7 +102,7 @@ $(document).ready(function() {
         console.log($(this).text() + ' activated');
         $textHolder = $(this).html();
          console.log($textHolder);
-        $(this).html('<span class="ourCopyrightLinks current-year"><a href="https://leerlandais.com">Hi there</a></span>')             
+        $(this).html('<span class="ourCopyrightLinks current-year"><a href="https://leerlandais.com" target = "_blank">Hi there</a></span>')             
     });  
 }
 $(".ourCopyrightLinks").on("mouseleave", function () {
