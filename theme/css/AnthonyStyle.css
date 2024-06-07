@@ -317,7 +317,7 @@ item3.active p {
     justify-content: center;
 }
 
-#bouton1 {
+#bouton1,.bouton1 {
     appearance: button;
     background-color: #00a89f;
     border: solid transparent;
@@ -346,7 +346,7 @@ item3.active p {
     white-space: nowrap;
 }
 
-#bouton1:after {
+#bouton1:after,.bouton1:after {
     background-clip: padding-box;
     background-color: #00a89f;
     border: solid transparent;
@@ -361,23 +361,23 @@ item3.active p {
     z-index: -1;
 }
 
-#bouton1:focus {
+#bouton1:focus,.bouton1:focus {
     user-select: auto;
 }
 
-#bouton1:hover:not(:disabled) {
+#bouton1:hover:not(:disabled),.bouton1:hover:not(:disabled) {
     filter: brightness(1.1);
 }
 
-#bouton1:disabled {
+#bouton1:disabled,.bouton1:disabled {
     cursor: auto;
 }
 
-#bouton1:active:after {
+#bouton1:active:after,.bouton1:active:after {
     border-width: 0 0 0px;
 }
 
-#bouton1:active {
+#bouton1:active,.bouton1:active {
     padding-bottom: 10px;
 }
 
