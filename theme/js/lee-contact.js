@@ -15,11 +15,11 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
     $mapIcon = L.icon({
     iconUrl: 'images/logo-mlsg/logoPrincipal.png',
-    iconSize:     [60, 95], 
+    iconSize:     [95, 65], 
     shadowSize:   [50, 64], 
     iconAnchor:   [0, 20], 
     shadowAnchor: [4, 62],  
-    popupAnchor:  [0, 6]
+    popupAnchor:  [45, -5]
     });
 
     $marker = L.marker([$latitude, $longtitude], {icon:$mapIcon}).addTo(map);
@@ -54,7 +54,7 @@ $("#blockEmail").queue(function(next){
             contactFun();
         });
 
-
+/*
         function contactFun() {
             for (let i = 0; i < $('.contactFunSpan').length; i++) {
                 for (let j = -1; j < $('.contactFunSpan').length; j++){
@@ -80,9 +80,47 @@ $("#blockEmail").queue(function(next){
         }
         }
         
+*/
+
+function contactFun() {
+    
+    for (let i = 0; i < $('.contactFunSpan').length * 5; i++) {
+        let x = Math.floor(Math.random() * $('.contactFunSpan').length);
+        let y = Math.floor((Math.random() * 3)+1);
+        setTimeout(() => {
+            switch (y) {
+                case 1 :
+                    $(`.contactFunSpan${x}`).css("color", '#E30056');
+                break;
+                case 2 :
+                    $(`.contactFunSpan${x}`).css("color", '#7E2C5C');
+                break;
+                case 3 :
+                    $(`.contactFunSpan${x}`).css("color", '#00A89F');
+                break;
+            }
+
+        }, 100 * i);
+
+        setTimeout(() => {
+            $(".contactFunSpan").animate({color : "black"},3000)
+        }, 3500);
 
 
-
+        /*
+        setTimeout(() => {
+            $span[i].css("color", '#E30056');
+            if (i > 1) {
+                $span[i].prev().css("color", '#7E2C5C');
+                $span[i].prev().prev().css("color", '#00A89F');
+            }
+        }, 250 * i);
+        setTimeout(() => {
+            $(".contactFunSpan").animate({color : "black"},3000)
+        }, 3500);
+        */
+    }
+}
 
 
 

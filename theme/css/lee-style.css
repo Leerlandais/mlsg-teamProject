@@ -95,3 +95,7 @@
 .contactFunWrapper {
   display: flex;
 }
+
+.normalSpan {
+  margin-left: auto;
+}
