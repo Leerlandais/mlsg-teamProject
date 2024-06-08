@@ -170,7 +170,7 @@
     <!--NE RIEN TOUCHER AU DESSUS-->
 <!-- HERO
 ================================================== -->
-<section class="page-banner-area page-contact">
+<section class="page-banner-area page-contact" id="contactOverlay">
     <div class="overlay"></div>
     <!-- Content -->
     <div class="container">
@@ -191,24 +191,24 @@
     <section id="contact-info">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="contact-info-block text-center h-100 contactBlocks">
+                <div class="col-lg-4 col-sm-6 col-md-6 contactBlocks" id="blockAddr">
+                    <div class="contact-info-block text-center h-100 shadow-lg">
                       <span class="hiddenContact">Viens nous rendre visite!</span>
                         <i class="pe-7s-map-marker"></i>
                         <h4>Adresse</h4>
                         <p class="lead">255 chausée de Waterloo, 1060 Saint-Gilles</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="contact-info-block text-center h-100 contactBlocks">
+                <div class="col-lg-4 col-sm-6 col-md-6 contactBlocks" id="blockEmail">
+                    <div class="contact-info-block text-center h-100 shadow-lg">
                       <span class="hiddenContact">ou contactez-nous par email</span>
                         <i class="pe-7s-mail"></i>
                         <h4>Email</h4>
                         <p class="lead">contact@mlsg.be</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="contact-info-block text-center h-100 contactBlocks">
+                <div class="col-lg-4 col-sm-6 col-md-6 contactBlocks" id="blockTele">
+                    <div class="contact-info-block text-center h-100 shadow-lg">
                       <span class="hiddenContact">ou appelez-nous</span>
                         <i class="pe-7s-phone"></i>
                         <h4>Numéro du Téléphone</h4>
@@ -220,7 +220,7 @@
     </section>
 
     <section class="section" id="contact">
-        <div class="container">
+        <div class="container d-flex flex-column justify-content-center">
             <div class="row mb-4">
                 <div class="col-md-8 col-lg-6">
                     <h5 class="hiddenContact">ou par ici</h5>
@@ -500,6 +500,7 @@
           =====================================-->
           <!-- jQuery -->
           <script src="plugins/jquery/jquery.min.js"></script>
+          <script src="js/ui-cdn.js"></script>
           <!-- Bootstrap -->
           <script src="plugins/bootstrap/bootstrap.min.js"></script>
           <!-- Slick Slider -->
@@ -510,9 +511,12 @@
           <script src="plugins/google-map/gmap.js"></script>
           -->
 
-          <script src="js/script.js"></script>
-          <script src="js/anthony-script.js"></script>
-           <script src="js/lee-script.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/anthony-script.js"></script>
+        <script src="js/lee-script.js"></script>
+
+        <!-- script unique a ce page -->
+        <script src="js/lee-contact.js"></script>
         
         </body>
         </html>

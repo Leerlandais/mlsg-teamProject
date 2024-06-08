@@ -77,6 +77,13 @@
   opacity: 0;
 }
 
-.page-contact {
-  background-position: top;
+#contactOverlay {
+  
+  background-image: url(../images/teamWorking.jpg);
 }
+
+.page-banner-content h1, .page-banner-content p {
+  color: white;
+}
+
+

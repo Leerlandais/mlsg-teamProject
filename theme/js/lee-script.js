@@ -1,10 +1,10 @@
+// JS utilisé sur toutes les pages
+
 $(document).ready(function() {
 
 $('.hiddenContact').hide();
 $("#slidingFooter").hide()
 
-
-  
   $('.ourCopyrightNames').on('mouseenter', function () {
     $(this).css("color", '#E30056');
    // $(this).animate({color : 'grey'},1000);
@@ -20,10 +20,9 @@ $("#slidingFooter").hide()
       $(this).removeAttr("style");
     });
   });
-    
   
-  
-  
+
+
   const target = document.querySelector('#hrHidden');
 
   let observer = new IntersectionObserver(function(entries) {
@@ -43,15 +42,6 @@ $("#slidingFooter").hide()
 
 
 
-const map = L.map('map').setView([50.824751527592014, 4.348971046014973], 19);
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 21,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
-  
-  
-  
-  
   
   /*
     $('#nameBA').hover(function(e) {
