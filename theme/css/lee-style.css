@@ -87,3 +87,11 @@
 }
 
 
+.contactFunSpan {
+  text-transform: none !important;
+  display: inline-block;
+  margin-left: -0.25em;
+}
+.contactFunWrapper {
+  display: flex;
+}

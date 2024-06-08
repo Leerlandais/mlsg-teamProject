@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 
-$('.hiddenContact').hide();
+
 $("#slidingFooter").hide()
 
   $('.ourCopyrightNames').on('mouseenter', function () {
