@@ -29,18 +29,24 @@ $(document).ready(function () {
         $('.item1.active h2').animateCss('zoomIn');
         $('.item.active h2').animateCss('zoomIn');
         $(".bouton1").animateCss("slideInUp");
-        $("#photoPresentation").animateCss("fadeInRight");
-        $("#aboutAnimate").animateCss("fadeInLeft");
-        
-        $("#card1").animateCss("rollIn");
-        $("#card2").animateCss("rollIn");
-        $("#card3").animateCss("rollIn");
 
-        $("#actu1").animateCss("fadeInUp");
-        $("#actu2").animateCss("fadeInUp");
-        $("#actu3").animateCss("fadeInUp");
-        
-        
+
+        function animateWithDelay(element, animation, delay) {
+            setTimeout(function () {
+                $(element).animateCss(animation);
+            }, delay);
+
+        }
+        animateWithDelay("#photoPresentation", "fadeInRight", 0);
+        animateWithDelay("#aboutAnimate", "fadeInLeft", 0);
+
+        animateWithDelay("#card1", "rollIn", 1000);
+        animateWithDelay("#card2", "rollIn", 1200);
+        animateWithDelay("#card3", "rollIn", 1400);
+
+        animateWithDelay("#actu1", "fadeInDown", 2000);
+        animateWithDelay("#actu2", "fadeInUp", 2000);
+        animateWithDelay("#actu3", "fadeInDown", 2000);
 
     });
 
@@ -56,7 +62,7 @@ $(document).ready(function () {
         });
 
         // add animation type  from animate.css on the element which you want to animate
-       
+
         $('.item2 h2').animateCss('swing');
         $('#item3').animateCss('swing');
         $('titreSlide3').animateCss('swing');
