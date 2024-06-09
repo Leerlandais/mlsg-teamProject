@@ -596,6 +596,7 @@ item3.active p {
     background-image: url(../images/Anthony/quisommesnous.png);
     background-repeat: no-repeat;
     height: 400px;
+    background-attachment: fixed;
 
 }
 
@@ -621,4 +622,35 @@ item3.active p {
     font-style: normal;
     font-size: 42px;
 
+}
+
+#iconeTarget,
+#iconeReseau,
+#iconeBoost,
+#iconeOrient {
+    width: 90px;
+    height: 90px;
+}
+
+#imageApropos {
+    height: 500px;
+    width: 500px;
+    border-radius: 200px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-top: 5%;
+    position: relative;
+}
+
+.titresApropos {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titreGradient {
+    background: linear-gradient(90deg, hsla(177, 100%, 33%, 1) 9%, hsla(336, 87%, 44%, 1) 51%, hsla(325, 48%, 33%, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
