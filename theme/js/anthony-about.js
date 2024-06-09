@@ -8,7 +8,14 @@ $(document).ready(function () {
                 });
             }
         });
+
+
         $("#testImage").animateCss("slideInUp");
+
+        $("#animationBlocTexte").animateCss("slideInRight");
+
+
+
     })
 });
 
