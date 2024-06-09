@@ -14,6 +14,10 @@ $(document).ready(function () {
 
         $("#animationBlocTexte").animateCss("slideInRight");
 
+        $(".animationTeam").animateCss("fadeInDown");
+
+        $(".animationTeam2").animateCss("fadeInUp");
+
 
 
     })
