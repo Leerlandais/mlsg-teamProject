@@ -654,3 +654,26 @@ item3.active p {
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
+
+#team1,
+#team2,
+#team3,
+#team4,
+#team5,
+#team6 {
+    height: 440px;
+}
+
+.overlay-content-block a {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 100%;
+    position: absolute;
+    left: 30px;
+    top: -23px;
+    background: #E30056;
+    color: #fff;
+}
