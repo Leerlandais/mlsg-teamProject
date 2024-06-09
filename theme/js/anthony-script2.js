@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+
+    $("#card1").hide();
+    $("#card2").hide();
+    $("#card3").hide();
+    $("#actu1").hide();
+    $("#actu2").hide();
+    $("#actu3").hide();
+
     // invoke the carousel
     $('#myCarousel').carousel({
         interval: 6000
@@ -65,7 +74,6 @@ $(document).ready(function () {
 
 
 
-
     const target = document.querySelector('#thisSpanIsNotHere');
 
     let observer = new IntersectionObserver(function(entries) {
@@ -79,13 +87,20 @@ $(document).ready(function () {
                         $(element).animateCss(animation);
                     }, delay);
                 }
-        animateWithDelay("#card1", "rollIn", 1000);
-        animateWithDelay("#card2", "rollIn", 1200);
-        animateWithDelay("#card3", "rollIn", 1400);
+        $("#card1").show();
+        $("#card2").show();
+        $("#card3").show();
+        $("#actu1").show();
+        $("#actu2").show();
+        $("#actu3").show();                
+        animateWithDelay("#card1", "rollIn", 10);
+        animateWithDelay("#card2", "rollIn", 20);
+        animateWithDelay("#card3", "rollIn", 40);
 
-        animateWithDelay("#actu1", "fadeInDown", 2000);
-        animateWithDelay("#actu2", "fadeInUp", 2000);
-        animateWithDelay("#actu3", "fadeInDown", 2000);
+        animateWithDelay("#actu1", "fadeInDown", 200);
+        animateWithDelay("#actu2", "fadeInUp", 200);
+        animateWithDelay("#actu3", "fadeInDown", 200);
+
               $("#thisSpanIsNotHere").remove();
   
             }
