@@ -1,10 +1,10 @@
+// JS utilisé sur toutes les pages
+
 $(document).ready(function() {
 
-$('.hiddenContact').hide();
+
 $("#slidingFooter").hide()
 
-
-  
   $('.ourCopyrightNames').on('mouseenter', function () {
     $(this).css("color", '#E30056');
    // $(this).animate({color : 'grey'},1000);
@@ -20,10 +20,9 @@ $("#slidingFooter").hide()
       $(this).removeAttr("style");
     });
   });
-    
   
-  
-  
+
+
   const target = document.querySelector('#hrHidden');
 
   let observer = new IntersectionObserver(function(entries) {
@@ -32,6 +31,7 @@ $("#slidingFooter").hide()
               console.log('<hr> est pas visible');            
           } else {
             $('#slidingFooter').toggle(3000);
+            $("#hrHidden").remove();
 
           }
       });
@@ -42,12 +42,6 @@ $("#slidingFooter").hide()
 
 
 
-
-  
-  
-  
-  
-  
   
   /*
     $('#nameBA').hover(function(e) {

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+
 .carousel-inner,
 .carousel,
 .item,
@@ -53,28 +56,7 @@
     left: 0;
 }
 
-/*------------------------------- vertical carousel indicators ------------------------------*/
-.carousel-indicators {
-    position: absolute;
-    top: -20px;
-    bottom: 0;
-    margin: auto;
-    height: 20px;
-    right: 10px;
-    left: auto;
-    width: auto;
-}
 
-.carousel-indicators li {
-    display: block;
-    margin-bottom: 5px;
-    border: 1px solid #00a199;
-}
-
-.carousel-indicators li.active {
-    margin-bottom: 5px;
-    background: #00a199;
-}
 
 /*-------- Animation slider ------*/
 
@@ -300,8 +282,27 @@ item3.active p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.52);
+    background-color: rgba(0, 0, 0, 0.092);
     /* Couleur de fond de l'overlay semi-transparent */
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.406);
+    /* Couleur de fond de l'overlay semi-transparent */
+}
+
+.overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
 }
 
 .carousel-desc {
@@ -320,7 +321,8 @@ item3.active p {
     justify-content: center;
 }
 
-button {
+#bouton1,
+.bouton1 {
     appearance: button;
     background-color: #00a89f;
     border: solid transparent;
@@ -349,7 +351,8 @@ button {
     white-space: nowrap;
 }
 
-button:after {
+#bouton1:after,
+.bouton1:after {
     background-clip: padding-box;
     background-color: #00a89f;
     border: solid transparent;
@@ -364,24 +367,28 @@ button:after {
     z-index: -1;
 }
 
-button:main,
-button:focus {
+#bouton1:focus,
+.bouton1:focus {
     user-select: auto;
 }
 
-button:hover:not(:disabled) {
+#bouton1:hover:not(:disabled),
+.bouton1:hover:not(:disabled) {
     filter: brightness(1.1);
 }
 
-button:disabled {
+#bouton1:disabled,
+.bouton1:disabled {
     cursor: auto;
 }
 
-button:active:after {
+#bouton1:active:after,
+.bouton1:active:after {
     border-width: 0 0 0px;
 }
 
-button:active {
+#bouton1:active,
+.bouton1:active {
     padding-bottom: 10px;
 }
 
@@ -402,4 +409,216 @@ button:active {
     #boutonApropos {
         display: flex;
     }
+}
+
+#iconeCard1,
+#iconeCard2,
+#iconeCard3 {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+}
+
+#bouton2 {
+    position: relative;
+    margin: 0 auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#bouton2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #66CCCC;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+#bouton2 span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.675);
+}
+
+#bouton2 svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #ff6ead;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+#bouton2:hover:before {
+    width: 100%;
+    background: #66CCCC;
+
+}
+
+#bouton2:hover svg {
+    transform: translateX(0);
+}
+
+#bouton2:active {
+    transform: scale(0.95);
+}
+
+.lireSuite {
+    color: #E30056;
+    text-align: right !important;
+}
+
+.lireSuite:hover {
+    color: #E30056;
+}
+
+.blog-content:hover a h3 {
+    color: #E30056;
+}
+
+.titreSlide1 {
+    color: #34082C;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titreSlide2,
+.titreSlide3 {
+    margin-top: 10%;
+}
+
+@media(max-width:600px) {
+    .titreSlide1 {
+        font-size: 20px;
+    }
+
+    .titreSlide2,
+    .titreSlide3 {
+        margin-top: 35%;
+    }
+
+    #photoPresentation {
+        width: 350px;
+        height: 350px;
+        margin-left: 100px !important;
+        margin-bottom: 50px;
+    }
+
+    #bouton1 {
+
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+
+    #card1,
+    #card2 {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+@media (min-width:601px) and (max-width:770px) {
+    .titreSlide1 {
+        font-size: 20px;
+    }
+
+    .titreSlide2,
+    .titreSlide3 {
+        margin-top: 35%;
+    }
+
+    #photoPresentation {
+        margin-bottom: 50px;
+    }
+
+    #bouton1 {
+
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+
+    #card1,
+    #card2 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width:772px) and (max-width:800px) {
+    .titreSlide1 {
+        font-size: 20px;
+    }
+
+    .titreSlide2,
+    .titreSlide3 {
+        margin-top: 35%;
+    }
+
+    #photoPresentation {
+        width: 450px;
+        height: 450px;
+        margin-left: 100px !important;
+        margin-bottom: 50px;
+
+    }
+
+    #card2 {
+        height: 95% !important;
+    }
+
+    #card3 {
+        height: 95% !important;
+    }
+}
+
+/*Page qui sommes nous */
+
+#banner {
+    background-image: url(../images/Anthony/quisommesnous.png);
+    background-repeat: no-repeat;
+    height: 400px;
+
+}
+
+.overlayApropos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.552);
+    /* Couleur de fond de l'overlay semi-transparent */
+}
+
+#titreAbout {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#titreObjectif {
+    font-family: "Pridi", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
+
 }
