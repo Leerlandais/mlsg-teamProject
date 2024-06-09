@@ -1,7 +1,7 @@
 .page-banner-area .overlay {
     background-image: url('../images/baris/biotif1.png');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed; 
     width: 100%;
@@ -30,7 +30,7 @@ h1 {
 .overlay{
     box-shadow: 0 0 20px rgb(255, 60, 0);
 }
-
+/*
 #imgg{
     
 
@@ -45,7 +45,7 @@ $main-red: #bd150b !default;
 $main-red-rgb-015: rgba(189, 21, 11, 0.1) !default;
 $main-blue: #0076bd !default;
 $main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
-
+*/
 /* This pen */
 body {
 	font-family: "Baloo 2", cursive;
