@@ -1,12 +1,7 @@
 $(document).ready(function () {
 
 
-    $("#card1").hide();
-    $("#card2").hide();
-    $("#card3").hide();
-    $("#actu1").hide();
-    $("#actu2").hide();
-    $("#actu3").hide();
+
 
     // invoke the carousel
     $('#myCarousel').carousel({
@@ -87,12 +82,7 @@ $(document).ready(function () {
                         $(element).animateCss(animation);
                     }, delay);
                 }
-        $("#card1").show();
-        $("#card2").show();
-        $("#card3").show();
-        $("#actu1").show();
-        $("#actu2").show();
-        $("#actu3").show();                
+             
         animateWithDelay("#card1", "rollIn", 10);
         animateWithDelay("#card2", "rollIn", 20);
         animateWithDelay("#card3", "rollIn", 40);
