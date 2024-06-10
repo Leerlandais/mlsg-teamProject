@@ -37,16 +37,16 @@ $(document).ready(function () {
             }, delay);
 
         }
-        animateWithDelay("#photoPresentation", "fadeInRight", 0);
-        animateWithDelay("#aboutAnimate", "fadeInLeft", 0);
+        //animateWithDelay("#photoPresentation", "fadeInRight", 0);
+        // animateWithDelay("#aboutAnimate", "fadeInLeft", 0);
 
-        animateWithDelay("#card1", "rollIn", 1000);
-        animateWithDelay("#card2", "rollIn", 1200);
-        animateWithDelay("#card3", "rollIn", 1400);
+        // animateWithDelay("#card1", "rollIn", 1000);
+        // animateWithDelay("#card2", "rollIn", 1200);
+        // animateWithDelay("#card3", "rollIn", 1400);
 
-        animateWithDelay("#actu1", "fadeInDown", 2000);
-        animateWithDelay("#actu2", "fadeInUp", 2000);
-        animateWithDelay("#actu3", "fadeInDown", 2000);
+        //animateWithDelay("#actu1", "fadeInDown", 2000);
+        //animateWithDelay("#actu2", "fadeInUp", 2000);
+        //animateWithDelay("#actu3", "fadeInDown", 2000);
 
     });
 
