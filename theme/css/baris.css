@@ -30,11 +30,7 @@ h1 {
 .overlay{
     box-shadow: 0 0 20px rgb(255, 60, 0);
 }
-/*
-#imgg{
-    
 
-}
 
 ;
 $main-green: #79dd09 !default;
@@ -45,7 +41,7 @@ $main-red: #bd150b !default;
 $main-red-rgb-015: rgba(189, 21, 11, 0.1) !default;
 $main-blue: #0076bd !default;
 $main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
-*/
+
 /* This pen */
 body {
 	font-family: "Baloo 2", cursive;
