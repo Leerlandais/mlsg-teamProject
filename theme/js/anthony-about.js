@@ -8,7 +8,18 @@ $(document).ready(function () {
                 });
             }
         });
+
+
         $("#testImage").animateCss("slideInUp");
+
+        $("#animationBlocTexte").animateCss("slideInRight");
+
+        $(".animationTeam").animateCss("fadeInDown");
+
+        $(".animationTeam2").animateCss("fadeInUp");
+
+
+
     })
 });
 
