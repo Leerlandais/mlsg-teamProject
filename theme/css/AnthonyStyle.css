@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 
 .carousel-inner,
 .carousel,
@@ -621,6 +622,7 @@ item3.active p {
     font-weight: 400;
     font-style: normal;
     font-size: 42px;
+  
 
 }
 
@@ -643,9 +645,10 @@ item3.active p {
 }
 
 .titresApropos {
-    font-family: "Tinos", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   font-size: 40px;
 }
 
 .titreGradient {
