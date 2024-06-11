@@ -245,3 +245,7 @@ button.focus, button:focus {
     margin-top: 20px;
     padding-bottom: 15px;
 }
+
+.enlarged {
+    font-size: 2rem; /* Changer la taille du texte selon vos besoins */
+}
