@@ -46,10 +46,12 @@
     <link rel="stylesheet" href="css/AnthonyStyle.css">
     <link rel="stylesheet" href="css/lee-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
     <!--Favicon-->
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!--Aos api-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -86,12 +88,12 @@
                     <!-- Links -->
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#!" id="navbarWelcome" role="button"
+                            <a class="nav-link dropdown-toggle" href="index.html" id="navbarWelcome" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Accueil
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarWelcome">
-                                <li><a class="dropdown-item" href="#">Nos services</a></li>
+                                <li><a class="dropdown-item" href="index.html">Nos services</a></li>
                                 <li><a class="dropdown-item" href="#">Diaporama</a></li>
                                 <li><a class="dropdown-item" href="#">Nos actualités</a></li>
 
@@ -99,12 +101,12 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#!" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="qui_sommes.html" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Qui sommes-nous ?
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarWelcome">
-                                <li><a class="dropdown-item" href="#">Nos missions, notre méthode, nos
+                                <li><a class="dropdown-item" href="qui_sommes.html">Nos missions, notre méthode, nos
                                         valeurs</a></li>
                                 <li><a class="dropdown-item" href="#">Notre équipe</a></li>
                                 <li><a class="dropdown-item" href="#">Le conseil d'administration</a></li>
@@ -116,12 +118,12 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#!" role="button" data-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="accomp.html" role="button" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 Accompagnement
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarWelcome">
-                                <li><a class="dropdown-item" href="#">Accompagnement individuel</a></li>
+                                <li><a class="dropdown-item" href="accomp.html">Accompagnement individuel</a></li>
                                 <li><a class="dropdown-item" href="#">Accompagnement social</a></li>
                                 <li><a class="dropdown-item" href="#">Espace public numérique</a></li>
 
@@ -137,7 +139,7 @@
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="agenda-new.html" class="nav-link js-scroll-trigger">
+                        <a href="agenda.html" class="nav-link js-scroll-trigger">
                             Agenda Formation
                         </a>
                     </li>
@@ -266,8 +268,11 @@
                             <div class="inner-content">
 
                                 <div class="carousel-desc text-center mt-5 pt-5">
-                                    <span id="animationTitre2"><h2 class=" text-white titreSlide2">Découvrir et se former aux métiers de l'horeca</h2></span>
-                                    
+                                    <span id="animationTitre2">
+                                        <h2 class=" text-white titreSlide2">Découvrir et se former aux métiers de
+                                            l'horeca</h2>
+                                    </span>
+
                                     <button class="mt-5 bouton1"> En savoir plus</button>
                                 </div>
                             </div>
@@ -282,7 +287,7 @@
                                 <div class="carousel-desc text-center mt-5 pt-5">
                                     <h2 class=" text-white titreSlide3" id="item3">Découvrir et se former aux métiers de
                                         l'informatique</h2>
-                                    
+
                                     <button class="mt-5 bouton1">En savoir plus</button>
                                 </div>
                             </div>
@@ -298,9 +303,10 @@
             <div class="row flex-lg-row-reverse align-items-center">
                 <div class="col-lg-6">
                     <img src="images/Anthony/orientation.jpg" class="d-block mx-lg-auto img-fluid rounded-4-end-circle"
-                        alt="Photo de présentation" width="700" height="450" id="photoPresentation">
+                        alt="Photo de présentation" width="700" height="450" id="photoPresentation" data-aos="fade-left"
+                        data-aos-duration="2000">
                 </div>
-                <div class="col-lg-6" id="aboutAnimate">
+                <div class="col-lg-6" id="aboutAnimate" data-aos="fade-right" data-aos-duration="2000">
                     <h1 class="display-6 fw-bold mb-4">Votre Avenir, Notre Mission
                     </h1>
                     <p class="mt-4">La Mission Locale est votre partenaire de confiance pour réussir votre
@@ -325,7 +331,7 @@
             <h2 class="text-center mt-5 mb-5">Nos Différents Services</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card border-0 shadow-lg" id="card1">
+                    <div class="card border-0 shadow-lg" id="card1" data-aos="flip-right" data-aos-duration="2500">
                         <div class="card-body">
                             <img src="images/Anthony/card1.png" alt="Job coaching icone" id="iconeCard1">
                             <h5 class="card-title text-center mt-3 mb-3">Accompagnement vers l'emploi</h5>
@@ -345,7 +351,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card border-0 shadow-lg" id="card2">
+                    <div class="card border-0 shadow-lg" id="card2" data-aos="flip-right" data-aos-duration="2500">
                         <img src="images/Anthony/card2.png" alt="Bilan compétences icone" id="iconeCard2" class="mt-3">
                         <div class="card-body">
                             <h5 class="card-title text-center">Bilan de compétences</h5>
@@ -366,7 +372,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card border-0 shadow-lg" id="card3">
+                    <div class="card border-0 shadow-lg" id="card3" data-aos="flip-right" data-aos-duration="2500">
                         <img src="images/Anthony/icone3.png" alt="Bilan compétences icone" id="iconeCard3" class="mt-3">
                         <div class="card-body">
                             <h5 class="card-title text-center">Réseau de partenaires</h5>
@@ -413,68 +419,76 @@
                         </h2>
 
                         <!-- Subheading -->
-                      
+
                     </div>
                 </div>
             </div> <!-- / .row -->
 
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6" id="actu1">
+                <div class="col-lg-4 col-md-6" id="actu1" data-aos="fade-down" data-aos-duration="2000">
                     <div class="blog-box">
                         <div class="blog-img-box">
                             <img src="images/Anthony/ActuHoreca.jpg" alt="" class="img-fluid blog-img">
                         </div>
                         <div class="single-blog">
                             <div class="blog-content">
-                              
-                                <a href="#!">
-                                    <h3 class="card-title text-center">Découvrir et se former aux métiers de l'Horeca</h3>
-                                </a>
-                                <p class="text-justify"> Découvrez les métiers de l'Horeca (hôtellerie, restauration, cafés) et les formations disponibles pour vous lancer dans cette aventure passionnante.</p>
-                                <div class="text-center">
-                                <a href="agenda.html" class="lireSuite">Lire la suite</a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6" id="actu2">
-                    <div class="blog-box">
-                        <div class="blog-img-box">
-                            <img src="images/Anthony/ActuOrientation.jpg" alt="" class="img-fluid blog-img">
-                        </div>
-                        <div class="single-blog">
-                            <div class="blog-content">
-                               
                                 <a href="#!">
-                                    <h3 class="card-title text-center">Notre  Atelier d'Orientation Professionnelle</h3>
+                                    <h3 class="card-title text-center">Découvrir et se former aux métiers de l'Horeca
+                                    </h3>
                                 </a>
-
-                                <p class="text-justify">Aide dans la construction de votre projet professionnel : point sur votre parcours, identification de vos compétences et de vos motivations et conseils sur le marché de l’emploi.</p>
+                                <p class="text-justify"> Découvrez les métiers de l'Horeca (hôtellerie, restauration,
+                                    cafés) et les formations disponibles pour vous lancer dans cette aventure
+                                    passionnante.</p>
                                 <div class="text-center">
-                                <a href="agenda.html" class="lireSuite">Lire la suite</a>
+                                    <a href="agenda.html" class="lireSuite">Lire la suite</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-8" id="actu3">
+                <div class="col-lg-4 col-md-6" id="actu2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="blog-box">
+                        <div class="blog-img-box">
+                            <img src="images/Anthony/ActuOrientation.jpg" alt="" class="img-fluid blog-img">
+                        </div>
+                        <div class="single-blog">
+                            <div class="blog-content">
+
+                                <a href="#!">
+                                    <h3 class="card-title text-center">Notre Atelier d'Orientation Professionnelle</h3>
+                                </a>
+
+                                <p class="text-justify">Aide dans la construction de votre projet professionnel : point
+                                    sur votre parcours, identification de vos compétences et de vos motivations et
+                                    conseils sur le marché de l'emploi.</p>
+                                <div class="text-center">
+                                    <a href="agenda.html" class="lireSuite">Lire la suite</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-8" id="actu3" data-aos="fade-down" data-aos-duration="2000">
                     <div class="blog-box">
                         <div class="blog-img-box">
                             <img src="images/Anthony/ActuInformatique.jpg" alt="" class="img-fluid blog-img">
                         </div>
                         <div class="single-blog">
                             <div class="blog-content">
-                               
+
                                 <a href="#!">
-                                    <h3 class="card-title text-center">Découvrir et se former aux métiers de l’Informatique
+                                    <h3 class="card-title text-center">Découvrir et se former aux métiers de
+                                        l’Informatique
                                     </h3>
                                 </a>
-                                <p class="text-justify">Découvrez les métiers de l'informatique (développement, cybersécurité, réseaux) et les formations disponibles pour vous lancer dans cette aventure passionnante.</p>
+                                <p class="text-justify">Découvrez les métiers de l'informatique (développement,
+                                    cybersécurité, réseaux) et les formations disponibles pour vous lancer dans cette
+                                    aventure passionnante.</p>
                                 <div class="text-center">
-                                <a href="agenda.html" class="lireSuite">Lire la suite</a>
+                                    <a href="agenda.html" class="lireSuite">Lire la suite</a>
                                 </div>
                             </div>
                         </div>
@@ -495,161 +509,179 @@
                     <!-- Brand -->
                     <a href="https://mlsg.be/" target="_blank" class="">
                         <h2 class="footer-brand text-white redFooterHeaders mt-4">Mission Locale Saint-Gilles</h2>
-                     </a><p class="mt-0">255 chausée de Waterloo, 1060 Saint-Gilles    02/542.63.21</p>
-                 </div>
-             </div>
-             <div class="row justify-content-start">
-     
-            <div class="col">
-              <div class="footer-widget">
-                <h3 class="redFooterHeaders m-1">Account</h3>
-                <!-- Links -->
-                <ul class="footer-links ">
-                  <li>
-                    <a href="#!" class="colourChange">
-                      Terms and conditions
                     </a>
-                  </li>
-                  <li>
-                    <a href="#!" class="colourChange">
-                      Privacy policy
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" class="colourChange">
-                      Affiliate services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" class="colourChange">
-                      Help and support
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" class="colourChange">
-                      Frequently Asked Question
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                    <p class="mt-0">255 chausée de Waterloo, 1060 Saint-Gilles 02/542.63.21</p>
+                </div>
             </div>
-     
-     
-            <div class="col">
-              <div class="footer-widget">
-                <h3 class="redFooterHeaders m-1">About</h3>
-                <!-- Links -->
-                <ul class="footer-links">
-                 <li>
-                   <a href="about.html" class="colourChange">
-                     About Us
-                   </a>
-                 </li>
-                  <li>
-                    <a href="service.html" class="colourChange">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="pricing.html" class="colourChange">
-                      Pricing
-                    </a>
-                  </li>
-                  <li>
-                    <a href="project.html" class="colourChange">
-                     Recent Projects
-                    </a>
-                  </li>
-     
-                  <li>
-                    <a href="contact.html" class="colourChange">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-     
-            <div class="col">
-              <div class="footer-widget">
-                <h3 class="redFooterHeaders m-1">Socials</h3>
-                <!-- Links -->
-                <ul class="list-unstyled footer-links">
-                  <li><a href="https://www.facebook.com/missionlocaledesaintgilles" target="_blank" class="colourChange"><i class="fab fa-facebook-f"></i>Facebook</a></li>
-                  <li>
-                    <a href="https://www.instagram.com/missionlocaledesaintgilles/" target="_blank" class="colourChange"><i class="fab fa-instagram"></i>Instagram
-                    </a></li>
-                  <li><a href="https://be.linkedin.com/company/mission-locale-pour-l%27emploi-de-saint-gilles" target="_blank" class="colourChange"><i class="fab fa-linkedin"></i>linkedin
-                    </a></li>
-                  <li><a href="https://www.youtube.com/channel/UC-_2jO4Bw7PqM5k00sGFdgA" target="_blank" class="colourChange"><i class="fab fa-youtube"></i>YouTube
-                    </a></li>
-                </ul>
-              </div>
-            </div>
-     
-         <!-- BULLETIN SIGNUP -->   
-            <div class="col d-flex flex-column align-items-center border obligedBorderColour rounded-circle p-4">
-             <h5 class="redFooterHeaders">Bulletin</h5>
-             <p class="mt-3 text-center">Pour recevoir notre newsletter, veuillez saisir votre adresse email</p>
-             <div class="d-flex flex-column align-items-center">
-                 <input class="form-control py-3 px-4 bg-transparent text-center obligedBorderColour" placeholder="Adresse Email">
-                 <button class="btn theFooterButton mt-2">Envoyer</button>
-             </div>
-         </div>
-         <!-- / BULLETIN SIGNUP -->   
-     
-          </div> <!-- / .row -->
-     
-     
-         
-          <div class="row text-right pt-2">
-            <div class="col">
-              <div class="overflow-hidden">
-                <!-- Copyright -->
-               <p class="footer-copy">
-                 Copyright &copy; <script>var CurrentYear = new Date().getFullYear()
-                 document.write(CurrentYear)
-               </script>. Conçu &amp; développé par 
-    
-                                     <span class="current-year"><span id="nameBA"><a href="https://2023.webdev-cf2m.be/Baris/TI3-2024/public/" target="_blank" class="ourCopyrightNames pl-3">Baris Aktas</a></span> - </span> <!-- Faut que Baris change sa page (entretemps, j'ai mis TI3) -->
-    
-                                     <span class="current-year"><span id="nameAA"><a href="https://2023.webdev-cf2m.be/Anthony/" target="_blank" class="ourCopyrightNames">Anthony Arnone</a></span> - </span>
-    
-                                     <span class="current-year"><span id="nameRB"><a href="https://2023.webdev-cf2m.be/Rami/" target="_blank" class="ourCopyrightNames">Rami Ben Salem</a></span> - </span>
-    
-                                     <span class="current-year"><span id="nameLB"><a href="https://leerlandais.com" target = "_blank" class="ourCopyrightNames">Lee Brennan</a></span></span>
-                                     
-               </p>
-              </div>
-            </div>
-          </div> <!-- / .row -->
+            <div class="row justify-content-start">
+
+                <div class="col">
+                    <div class="footer-widget">
+                        <h3 class="redFooterHeaders m-1">Account</h3>
+                        <!-- Links -->
+                        <ul class="footer-links ">
+                            <li>
+                                <a href="#!" class="colourChange">
+                                    Terms and conditions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="colourChange">
+                                    Privacy policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="colourChange">
+                                    Affiliate services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="colourChange">
+                                    Help and support
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="colourChange">
+                                    Frequently Asked Question
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="footer-widget">
+                        <h3 class="redFooterHeaders m-1">About</h3>
+                        <!-- Links -->
+                        <ul class="footer-links">
+                            <li>
+                                <a href="about.html" class="colourChange">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="service.html" class="colourChange">
+                                    Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pricing.html" class="colourChange">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="project.html" class="colourChange">
+                                    Recent Projects
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html" class="colourChange">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="footer-widget">
+                        <h3 class="redFooterHeaders m-1">Socials</h3>
+                        <!-- Links -->
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="https://www.facebook.com/missionlocaledesaintgilles" target="_blank"
+                                    class="colourChange"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                            <li>
+                                <a href="https://www.instagram.com/missionlocaledesaintgilles/" target="_blank"
+                                    class="colourChange"><i class="fab fa-instagram"></i>Instagram
+                                </a>
+                            </li>
+                            <li><a href="https://be.linkedin.com/company/mission-locale-pour-l%27emploi-de-saint-gilles"
+                                    target="_blank" class="colourChange"><i class="fab fa-linkedin"></i>linkedin
+                                </a></li>
+                            <li><a href="https://www.youtube.com/channel/UC-_2jO4Bw7PqM5k00sGFdgA" target="_blank"
+                                    class="colourChange"><i class="fab fa-youtube"></i>YouTube
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- BULLETIN SIGNUP -->
+                <div class="col d-flex flex-column align-items-center border obligedBorderColour rounded-circle p-4">
+                    <h5 class="redFooterHeaders">Bulletin</h5>
+                    <p class="mt-3 text-center">Pour recevoir notre newsletter, veuillez saisir votre adresse email</p>
+                    <div class="d-flex flex-column align-items-center">
+                        <input class="form-control py-3 px-4 bg-transparent text-center obligedBorderColour"
+                            placeholder="Adresse Email">
+                        <button class="btn theFooterButton mt-2">Envoyer</button>
+                    </div>
+                </div>
+                <!-- / BULLETIN SIGNUP -->
+
+            </div> <!-- / .row -->
+
+
+
+            <div class="row text-right pt-2">
+                <div class="col">
+                    <div class="overflow-hidden">
+                        <!-- Copyright -->
+                        <p class="footer-copy">
+                            Copyright &copy;
+                            <script>var CurrentYear = new Date().getFullYear()
+                                document.write(CurrentYear)
+                            </script>. Conçu &amp; développé par
+
+                            <span class="current-year"><span id="nameBA"><a
+                                        href="https://2023.webdev-cf2m.be/Baris/TI3-2024/public/" target="_blank"
+                                        class="ourCopyrightNames pl-3">Baris Aktas</a></span> - </span>
+                            <!-- Faut que Baris change sa page (entretemps, j'ai mis TI3) -->
+
+                            <span class="current-year"><span id="nameAA"><a href="https://2023.webdev-cf2m.be/Anthony/"
+                                        target="_blank" class="ourCopyrightNames">Anthony Arnone</a></span> - </span>
+
+                            <span class="current-year"><span id="nameRB"><a href="https://2023.webdev-cf2m.be/Rami/"
+                                        target="_blank" class="ourCopyrightNames">Rami Ben Salem</a></span> - </span>
+
+                            <span class="current-year"><span id="nameLB"><a href="https://leerlandais.com"
+                                        target="_blank" class="ourCopyrightNames">Lee Brennan</a></span></span>
+
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- / .row -->
         </div> <!-- / .container -->
-      </footer>
-     
-      >
-      <!--  Page Scroll to Top  -->
-     
-      <a id="scroll-to-top" class="scroll-to-top js-scroll-trigger" href="#top-header">
+    </footer>
+
+
+    <!--  Page Scroll to Top  -->
+
+    <a id="scroll-to-top" class="scroll-to-top js-scroll-trigger" href="#top-header">
         <i class="fa fa-angle-up returnToTop"></i>
-      </a>
-     
-       <!-- 
+    </a>
+
+    <!-- 
        Essential Scripts
        =====================================-->
-       <!-- jQuery -->
-       <script src="plugins/jquery/jquery.min.js"></script>
-       <!-- Bootstrap -->
-       <script src="plugins/bootstrap/bootstrap.min.js"></script>
-       <!-- Slick Slider -->
-       <script src="plugins/slick-carousel/slick/slick.min.js"></script>
-       <!-- Google Map -->
-       <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script> -->
-       <script src="plugins/google-map/gmap.js"></script>
-     
-       <script src="js/script.js"></script>
-       <script src="js/anthony-script.js"></script>
-        <script src="js/lee-script.js"></script>
-     
-     </body>
-     </html>
-        
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script> -->
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/anthony-script.js"></script>
+    <script src="js/lee-script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
