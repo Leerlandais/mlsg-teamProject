@@ -25,7 +25,7 @@ h1 {
 }
 
 .barisImg {
-  background:  linear-gradient(-70deg, #424242, transparent 50%) !important;
+  background:  linear-gradient(-70deg, #424242, solid 50%) !important;
   
 }
 
@@ -228,7 +228,7 @@ a, a:hover {
       padding: 3rem;
       width: 100%;
     }
-
+ 
     .media.postcard__text:before {
       content: "";
       position: absolute;
@@ -372,7 +372,7 @@ button{
       font-weight: bold;
       width: calc(100% - 50px);
       border-radius: $radius-width;
-      background: #ffdfdf;
+      background: linear-gradient(-90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
       transition: width .7s;
     }
     
@@ -397,3 +397,10 @@ button{
   font-weight: bold;
 }
 
+.hover-zoom {
+  transition: transform 0.5s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1);
+}
