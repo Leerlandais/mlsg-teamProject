@@ -7,7 +7,7 @@ $(document).ready(function(){
         left: '0%' 
     }, 1000); 
 });
-
+ 
 const $sliderWrap = $('.slider-wrap');
 const $slider = $sliderWrap.find('.slider');
 const $index = $slider.find('.index');
