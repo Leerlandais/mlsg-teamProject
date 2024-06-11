@@ -23,6 +23,7 @@
 .page-banner-content {
     position: relative;
     z-index: 1;
+<<<<<<< HEAD
 }
 
 
@@ -185,3 +186,6 @@ p {
 .card .content .foot .icon {
     font-size: 12px
 }
+=======
+}
+>>>>>>> 44a0209149adf1f8f12a71cf1636c6aa3a711c60
