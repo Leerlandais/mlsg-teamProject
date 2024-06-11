@@ -18,6 +18,7 @@ h1 {
     font-weight: bold;
   }
 
+  
   .bordure{
     box-shadow: 0 0 20px rgba(0, 5, 0, 0.5);
 
@@ -25,6 +26,7 @@ h1 {
 
 .barisImg {
   background:  linear-gradient(-70deg, #424242, transparent 50%) !important;
+  
 }
 
 .rounded-lg-3 {
@@ -353,7 +355,7 @@ button{
       color: #fff;
       font-weight: bold;
       border: 1px solid #233567;
-      background: #315b96;
+      background: -webkit-linear-gradient(#3df904, #f84113);
       border-radius: $radius-width;
       span{
         -webkit-writing-mode: vertical-rl;
@@ -383,4 +385,14 @@ button{
   }
 }
 
+#pp{
+  font-style: italic;
+  font-weight: bold;
+}
 
+#headding{
+  background: -webkit-linear-gradient(#3df904, #f84113);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
