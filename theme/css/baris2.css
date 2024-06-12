@@ -23,7 +23,6 @@
 .page-banner-content {
     position: relative;
     z-index: 1;
-<<<<<<< HEAD
 }
 
 
@@ -186,6 +185,67 @@ p {
 .card .content .foot .icon {
     font-size: 12px
 }
-=======
+
+#textt{
+    
 }
->>>>>>> 44a0209149adf1f8f12a71cf1636c6aa3a711c60
+
+
+/* Base styles for the entire page */
+head, body {
+    background-color: rgb(243, 247, 247);
+}
+
+/* Card component styling */
+.card {
+    cursor: pointer;
+}
+
+/* Header within the card */
+.hd {
+    font-size: 25px;
+    font-weight: 550;
+}
+
+/* Hover effect for the card */
+.card.hover, .card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+}
+
+/* Image styling within the card */
+.img {
+    margin-bottom: 35px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+/* Card title styling */
+.card-title {
+    font-weight: 600;
+}
+
+/* Button focus styling */
+button.focus, button:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+/* Footer styling */
+.ft {
+    margin-top: 25px;
+}
+
+/* Checkbox styling */
+.chk {
+    margin-bottom: 5px;
+}
+
+/* Additional card padding */
+.rck {
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.enlarged {
+    font-size: 2rem; /* Changer la taille du texte selon vos besoins */
+}
